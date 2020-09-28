@@ -1,0 +1,49 @@
+História de Usuário
+
+Personas: 
+URI Judge, Programador iniciante
+
+Modelo inclusivo
+
+História de usuário 
+
+"Eu, sendo usuário,
+gostaria de enviar o total de kilômetros percorridos e o combustível gasto para saber a quantidade
+média de consumo"
+
+"AS, I WOULD LIKE, IN ORDER TO"
+
+Critérios de aceitação:
+a. Uma entrada com "int X" e "float Y" 
+b. X deve ser um número positivo
+c. Y deve ser um número positivo
+d. Y deve ter um dígito após a casa decimal
+
+Testes:
+x. {(500, 35.0) -> (14.286 km/l)}
+y. {(2254, 124.4) -> (18.119 km/l)}
+z. {(4554, 464.6) -> (9.802 km/l)}
+
+Gherkin
+
+"Given, When, Then"
+"Dado, Quando, Então"
+
+Dado 2 entradas, um int X e um float Y  
+Quando o calculo for requisitado
+Então a saída será X dividido por Y, com 3 casas decimais após a vírgula, seguido da mensagem "km/l".
+
+a      |  b    | s
+500    | 35.0  | 14.286 km/l
+2254   | 124.4 | 18.119 km/l
+4554   | 464.6 | 9.802 km/l
+
+Dado os valores de 500 e 35.0
+Quando o calculo for requisitado
+Então o resultado será 14.286 km/l
+
+
+Tarefas
+1. Decidir tecnologia (plataforma - Platform Specific Model) -> C11
+2. Codificar e testar
+
